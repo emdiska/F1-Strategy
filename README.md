@@ -124,12 +124,6 @@ Circuit-level validation:
 | Italian GP | 0.005 s/lap | 3/5 lateral=2 | ✓ Lowest |
 | Hungarian GP | 0.020 s/lap | 3/5 abrasion=2 | ✓ Low |
 
-### Strategy prediction
-
-| Race | Model prediction | Actual outcome | Assessment |
-|------|-----------------|----------------|------------|
-| Qatar 2024 | SOFT→HARD→HARD, 2-stop | Mandatory 2-stop, SOFT start endorsed by Pirelli | ✓ Correct |
-| Bahrain 2024 | SOFT→SOFT→MEDIUM | SOFT→HARD→HARD dominated | Compound mix incorrect |
 
 ### R² distribution
 
