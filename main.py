@@ -41,7 +41,7 @@ h1 {
   margin-bottom: 6px;
 }
 .subtitle {
-  font-size: 12px; color: #444; letter-spacing: 2px;
+  font-size: 12px; color: #888; letter-spacing: 2px;
   text-transform: uppercase; margin-bottom: 48px;
 }
 .card {
@@ -56,7 +56,7 @@ h1 {
 .row.full { grid-template-columns: 1fr; }
 .field { display: flex; flex-direction: column; gap: 6px; }
 label {
-  font-size: 10px; color: #555;
+  font-size: 10px; color: #aaa;
   text-transform: uppercase; letter-spacing: 1.5px;
 }
 select, input[type="number"] {
@@ -66,9 +66,9 @@ select, input[type="number"] {
   appearance: none; width: 100%;
   transition: border-color 0.2s;
 }
-select:hover, input:hover { border-color: #444; }
+select:hover, input:hover { border-color: #555; }
 select:focus, input:focus {
-  outline: none; border-color: #555;
+  outline: none; border-color: #777;
 }
 .btn-run {
   width: 100%; padding: 14px; border-radius: 6px;
@@ -93,7 +93,7 @@ select:focus, input:focus {
   padding: 16px; min-height: 60px;
   font-size: 11px; font-family: monospace; display: none;
 }
-.status-line { color: #666; margin-bottom: 4px; }
+.status-line { color: #888; margin-bottom: 4px; }
 .status-line.active { color: #4a9eff; }
 .status-line.done   { color: #22cc55; }
 .status-line.error  { color: #e8002d; }
@@ -105,7 +105,7 @@ select:focus, input:focus {
   padding: 10px; border-radius: 6px; cursor: pointer;
   font-size: 11px; font-weight: 600; letter-spacing: 1px;
   text-transform: uppercase; border: 1px solid #2a2a2a;
-  background: #161616; color: #555;
+  background: #161616; color: #888;
   transition: all 0.2s; text-align: center;
 }
 .sc-btn.selected-low {
@@ -121,7 +121,7 @@ select:focus, input:focus {
   border-color:#e8002d;
 }
 .section-label {
-  font-size: 10px; color: #444; text-transform: uppercase;
+  font-size: 10px; color: #aaa; text-transform: uppercase;
   letter-spacing: 1.5px; margin-bottom: 12px;
   margin-top: 4px;
 }
@@ -146,7 +146,7 @@ select:focus, input:focus {
   padding: 6px 14px; border-radius: 4px; cursor: pointer;
   font-size: 10px; font-weight: 600; letter-spacing: 1px;
   text-transform: uppercase; border: 1px solid #2a2a2a;
-  background: #161616; color: #555; transition: all 0.2s;
+  background: #161616; color: #888; transition: all 0.2s;
 }
 .toggle-btn.active {
   background: #1a2a1a; color: #22cc55;
@@ -159,7 +159,7 @@ select:focus, input:focus {
   margin-bottom: 10px;
 }
 .sets-row label {
-  font-size: 10px; color: #555;
+  font-size: 10px; color: #aaa;
   text-transform: uppercase; letter-spacing: 1px;
   white-space: nowrap;
 }
@@ -171,7 +171,7 @@ select:focus, input:focus {
 .age-input-wrap {
   display: flex; flex-direction: column; gap: 4px;
 }
-.age-input-wrap label { font-size: 9px; color: #444; }
+.age-input-wrap label { font-size: 9px; color: #aaa; }
 .age-input-wrap input { width: 65px; }
 .start-btns {
   display: flex; flex-wrap: wrap; gap: 6px;
@@ -181,7 +181,7 @@ select:focus, input:focus {
   cursor: pointer; font-size: 10px;
   font-weight: 600; letter-spacing: 1px;
   border: 1px solid #2a2a2a;
-  background: #161616; color: #555;
+  background: #161616; color: #888;
   transition: all 0.2s; white-space: nowrap;
 }
 .start-btn.selected {
@@ -249,7 +249,7 @@ select:focus, input:focus {
       <div class="ages-row" id="ages-soft"></div>
       <div class="start-row" id="start-row-soft"
            style="display:none;margin-top:12px;">
-        <label style="font-size:10px;color:#555;
+        <label style="font-size:10px;color:#aaa;
                text-transform:uppercase;letter-spacing:1px;
                margin-bottom:6px;display:block;">
           Starting on</label>
@@ -284,7 +284,7 @@ select:focus, input:focus {
       <div class="ages-row" id="ages-medium"></div>
       <div class="start-row" id="start-row-medium"
            style="display:none;margin-top:12px;">
-        <label style="font-size:10px;color:#555;
+        <label style="font-size:10px;color:#aaa;
                text-transform:uppercase;letter-spacing:1px;
                margin-bottom:6px;display:block;">
           Starting on</label>
@@ -319,7 +319,7 @@ select:focus, input:focus {
       <div class="ages-row" id="ages-hard"></div>
       <div class="start-row" id="start-row-hard"
            style="display:none;margin-top:12px;">
-        <label style="font-size:10px;color:#555;
+        <label style="font-size:10px;color:#aaa;
                text-transform:uppercase;letter-spacing:1px;
                margin-bottom:6px;display:block;">
           Starting on</label>
@@ -614,16 +614,15 @@ def build_results_html(circuit, laps, sc,
             compounds  = s['compounds']
             stint_laps = s['stint_laps']
             delta      = s['delta_vs_optimal']
-            windows    = s.get('pit_windows', [])
 
             label     = ' → '.join(compounds)
             delta_str = (
                 'OPTIMAL' if delta == 0
                 else f'+{delta:.3f}s')
-            label_col = '#e8002d' if is_best else '#555'
+            label_col = '#e8002d' if is_best else '#aaa'
 
-            blocks  = ''
-            cursor  = 0
+            blocks = ''
+            cur    = 0
             for k, (compound, stint_len) in enumerate(
                     zip(compounds, stint_laps)):
                 pct      = (stint_len / total_laps) * 100
@@ -645,7 +644,7 @@ def build_results_html(circuit, laps, sc,
                     f'font-weight:700;color:{txt_col};">'
                     f'{label_txt}</span></div>'
                 )
-                cursor += stint_len
+                cur += stint_len
 
             markers = ''
             cur = 0
@@ -667,7 +666,7 @@ def build_results_html(circuit, laps, sc,
                                       else '400'};
                          min-width:180px;">
                 {'★ ' if is_best else ''}{label}<br>
-                <span style="color:#444;font-size:10px;
+                <span style="color:#aaa;font-size:10px;
                              font-weight:400;">
                   {delta_str}</span>
               </td>
@@ -680,7 +679,7 @@ def build_results_html(circuit, laps, sc,
                 </div>
               </td>
               <td style="padding:8px 12px;white-space:nowrap;
-                         font-size:11px;color:#555;
+                         font-size:11px;color:#ccc;
                          min-width:120px;">
                 {fmt_time(s['total_time'])}
               </td>
@@ -700,13 +699,13 @@ def build_results_html(circuit, laps, sc,
                         f'Stop {k+1}: Lap {w[0]}–{w[1]}')
             if parts:
                 is_best   = i == 0
-                label_col = '#e8002d' if is_best else '#666'
+                label_col = '#e8002d' if is_best else '#aaa'
                 window_info += (
                     f'<div style="font-size:11px;'
                     f'margin-bottom:6px;">'
                     f'<span style="color:{label_col};">'
                     f'{label}</span>'
-                    f'<span style="color:#444;'
+                    f'<span style="color:#ccc;'
                     f'margin-left:12px;">'
                     + ' · '.join(parts)
                     + f'</span></div>'
@@ -727,7 +726,7 @@ def build_results_html(circuit, laps, sc,
                     f'font-weight:700;">{compound}</span>'
                 )
         legend += (
-            '<span style="font-size:10px;color:#444;">'
+            '<span style="font-size:10px;color:#aaa;">'
             '│ <span style="display:inline-block;'
             'width:12px;height:12px;background:#fff;'
             'vertical-align:middle;margin-right:4px;'
@@ -742,15 +741,15 @@ def build_results_html(circuit, laps, sc,
             <thead>
               <tr style="border-bottom:1px solid #2a2a2a;">
                 <th style="padding:6px 12px;text-align:left;
-                    font-size:10px;color:#444;font-weight:600;
+                    font-size:10px;color:#aaa;font-weight:600;
                     text-transform:uppercase;
                     letter-spacing:1px;">Strategy</th>
                 <th style="padding:6px 12px;text-align:left;
-                    font-size:10px;color:#444;font-weight:600;
+                    font-size:10px;color:#aaa;font-weight:600;
                     text-transform:uppercase;
                     letter-spacing:1px;">Lap Chart</th>
                 <th style="padding:6px 12px;text-align:left;
-                    font-size:10px;color:#444;font-weight:600;
+                    font-size:10px;color:#aaa;font-weight:600;
                     text-transform:uppercase;
                     letter-spacing:1px;">Race Time</th>
               </tr>
@@ -760,7 +759,7 @@ def build_results_html(circuit, laps, sc,
           <div style="margin-top:16px;padding:12px;
                background:#0f0f0f;border:1px solid #1e1e1e;
                border-radius:6px;">
-            <div style="font-size:10px;color:#444;
+            <div style="font-size:10px;color:#aaa;
                  text-transform:uppercase;letter-spacing:1px;
                  margin-bottom:8px;">
               Pit Windows (±1.5s)</div>
@@ -785,7 +784,7 @@ def build_results_html(circuit, laps, sc,
                 f'{c} ×{n}</span>')
         if start_age > 0:
             parts.append(
-                f'<span style="color:#666;font-size:10px;">'
+                f'<span style="color:#aaa;font-size:10px;">'
                 f'Starting age: {start_age} laps</span>')
         avail_str = (
             '<div style="display:flex;gap:8px;'
@@ -805,7 +804,7 @@ def build_results_html(circuit, laps, sc,
             circuit, {}).get(c, {})
         cliff_str = ''
         if cliff.get('has_cliff'):
-            tf = cliff.get('temp_factor', '')
+            tf     = cliff.get('temp_factor', '')
             tf_str = f' temp×{tf}' if tf else ''
             cliff_str = (
                 f' cliff@{cliff["cliff_lap"]} '
@@ -817,19 +816,19 @@ def build_results_html(circuit, laps, sc,
             f'padding:2px 8px;border-radius:3px;'
             f'font-size:11px;font-weight:700;">'
             f'{c}</span></td>'
-            f'<td style="padding:6px 12px;color:#aaa;">'
+            f'<td style="padding:6px 12px;color:#ddd;">'
             f'{d["base_pace"]:.3f}s</td>'
-            f'<td style="padding:6px 12px;color:#aaa;">'
+            f'<td style="padding:6px 12px;color:#ddd;">'
             f'+{d["deg_rate"]:.4f}s/lap</td>'
-            f'<td style="padding:6px 12px;color:#555;">'
+            f'<td style="padding:6px 12px;color:#ccc;">'
             f'{d.get("fuel_rate",0):+.4f}s/lap</td>'
-            f'<td style="padding:6px 12px;color:#555;">'
+            f'<td style="padding:6px 12px;color:#ccc;">'
             f'R²={d["r_squared"]:.3f}</td>'
-            f'<td style="padding:6px 12px;color:#555;">'
+            f'<td style="padding:6px 12px;color:#ccc;">'
             f'n={d["n_points"]}</td>'
-            f'<td style="padding:6px 12px;color:#555;">'
+            f'<td style="padding:6px 12px;color:#ccc;">'
             f'max={ms}laps{cliff_str}</td>'
-            f'<td style="padding:6px 12px;color:#333;'
+            f'<td style="padding:6px 12px;color:#888;'
             f'font-size:10px;">[{src}]</td>'
             f'</tr>'
         )
@@ -848,23 +847,23 @@ html,body {{ background:#0a0a0a;color:#fff;
   display:flex;align-items:center;
   justify-content:space-between; }}
 #header h1 {{ font-size:15px;font-weight:500; }}
-#header p  {{ font-size:11px;color:#555;margin-top:3px; }}
-.mode {{ font-size:10px;color:#555;letter-spacing:1px;
+#header p  {{ font-size:11px;color:#aaa;margin-top:3px; }}
+.mode {{ font-size:10px;color:#888;letter-spacing:1px;
   text-transform:uppercase; }}
 .body {{ max-width:1000px;margin:0 auto;padding:32px 24px; }}
 .section-title {{ font-size:11px;font-weight:600;
   letter-spacing:2px;text-transform:uppercase;
-  color:#444;margin-bottom:16px; }}
+  color:#aaa;margin-bottom:16px; }}
 .info-row {{ display:flex;gap:32px;
   margin-bottom:32px;flex-wrap:wrap; }}
 .info-item {{ display:flex;flex-direction:column;gap:4px; }}
-.info-label {{ font-size:10px;color:#444;
+.info-label {{ font-size:10px;color:#aaa;
   text-transform:uppercase;letter-spacing:1px; }}
 .info-value {{ font-size:14px;font-weight:600; }}
 .disclaimer {{
   background:#0f0f0f;border:1px solid #1e1e1e;
   border-radius:6px;padding:16px;margin-bottom:32px;
-  font-size:11px;color:#555;line-height:1.7;
+  font-size:11px;color:#bbb;line-height:1.7;
 }}
 </style>
 </head>
@@ -905,7 +904,7 @@ html,body {{ background:#0a0a0a;color:#fff;
   {avail_str}
 
   <div class="disclaimer">
-    <strong style="color:#666;">Model notes</strong> —
+    <strong style="color:#ddd;">Model notes</strong> —
     Degradation fitted from 112,732 stint-laps across
     2020–2025 using quadratic multiple regression
     (separating fuel burn from tyre wear).
@@ -939,23 +938,23 @@ html,body {{ background:#0a0a0a;color:#fff;
         <thead>
           <tr style="border-bottom:1px solid #1a1a1a;">
             <th style="padding:10px 12px;text-align:left;
-                color:#444;font-weight:600;">Compound</th>
+                color:#aaa;font-weight:600;">Compound</th>
             <th style="padding:10px 12px;text-align:left;
-                color:#444;font-weight:600;">Base Pace</th>
+                color:#aaa;font-weight:600;">Base Pace</th>
             <th style="padding:10px 12px;text-align:left;
-                color:#444;font-weight:600;">Deg Rate</th>
+                color:#aaa;font-weight:600;">Deg Rate</th>
             <th style="padding:10px 12px;text-align:left;
-                color:#444;font-weight:600;">Fuel Rate</th>
+                color:#aaa;font-weight:600;">Fuel Rate</th>
             <th style="padding:10px 12px;text-align:left;
-                color:#444;font-weight:600;">R²</th>
+                color:#aaa;font-weight:600;">R²</th>
             <th style="padding:10px 12px;text-align:left;
-                color:#444;font-weight:600;">
+                color:#aaa;font-weight:600;">
                 Data Points</th>
             <th style="padding:10px 12px;text-align:left;
-                color:#444;font-weight:600;">
+                color:#aaa;font-weight:600;">
                 Max Stint</th>
             <th style="padding:10px 12px;text-align:left;
-                color:#444;font-weight:600;">Source</th>
+                color:#aaa;font-weight:600;">Source</th>
           </tr>
         </thead>
         <tbody>{deg_rows}</tbody>
