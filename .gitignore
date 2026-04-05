@@ -1,0 +1,6 @@
+cache/
+data/stints.csv
+data/race_metadata.csv
+__pycache__/
+*.pyc
+.env

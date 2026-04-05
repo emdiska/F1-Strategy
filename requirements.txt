@@ -1,0 +1,6 @@
+fastf1
+numpy
+flask
+pandas
+scipy
+gunicorn

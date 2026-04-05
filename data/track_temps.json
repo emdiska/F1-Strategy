@@ -1,0 +1,167 @@
+{
+  "Austrian Grand Prix": {
+    "track_temp": 41.2,
+    "air_temp": 25.5,
+    "n_races": 6
+  },
+  "Styrian Grand Prix": {
+    "track_temp": 47.7,
+    "air_temp": 24.1,
+    "n_races": 2
+  },
+  "Hungarian Grand Prix": {
+    "track_temp": 35.7,
+    "air_temp": 24.4,
+    "n_races": 6
+  },
+  "British Grand Prix": {
+    "track_temp": 33.7,
+    "air_temp": 20.6,
+    "n_races": 6
+  },
+  "70th Anniversary Grand Prix": {
+    "track_temp": 43.7,
+    "air_temp": 25.6,
+    "n_races": 1
+  },
+  "Spanish Grand Prix": {
+    "track_temp": 42.1,
+    "air_temp": 27.5,
+    "n_races": 6
+  },
+  "Belgian Grand Prix": {
+    "track_temp": 29.6,
+    "air_temp": 18.2,
+    "n_races": 6
+  },
+  "Italian Grand Prix": {
+    "track_temp": 44.7,
+    "air_temp": 29.1,
+    "n_races": 6
+  },
+  "Tuscan Grand Prix": {
+    "track_temp": 43.5,
+    "air_temp": 30.2,
+    "n_races": 1
+  },
+  "Russian Grand Prix": {
+    "track_temp": 31.3,
+    "air_temp": 24.1,
+    "n_races": 2
+  },
+  "Eifel Grand Prix": {
+    "track_temp": 16.2,
+    "air_temp": 9.6,
+    "n_races": 1
+  },
+  "Portuguese Grand Prix": {
+    "track_temp": 32.9,
+    "air_temp": 20.1,
+    "n_races": 2
+  },
+  "Emilia Romagna Grand Prix": {
+    "track_temp": 28.3,
+    "air_temp": 18.3,
+    "n_races": 5
+  },
+  "Turkish Grand Prix": {
+    "track_temp": 17.2,
+    "air_temp": 14.6,
+    "n_races": 2
+  },
+  "Bahrain Grand Prix": {
+    "track_temp": 28.1,
+    "air_temp": 23.5,
+    "n_races": 6
+  },
+  "Sakhir Grand Prix": {
+    "track_temp": 23.4,
+    "air_temp": 20.8,
+    "n_races": 1
+  },
+  "Abu Dhabi Grand Prix": {
+    "track_temp": 30.9,
+    "air_temp": 26.1,
+    "n_races": 6
+  },
+  "Monaco Grand Prix": {
+    "track_temp": 39.5,
+    "air_temp": 22.3,
+    "n_races": 5
+  },
+  "Azerbaijan Grand Prix": {
+    "track_temp": 39.7,
+    "air_temp": 24.4,
+    "n_races": 5
+  },
+  "French Grand Prix": {
+    "track_temp": 46.3,
+    "air_temp": 28.4,
+    "n_races": 2
+  },
+  "Dutch Grand Prix": {
+    "track_temp": 30.8,
+    "air_temp": 20.1,
+    "n_races": 5
+  },
+  "United States Grand Prix": {
+    "track_temp": 41.5,
+    "air_temp": 28.9,
+    "n_races": 5
+  },
+  "Mexico City Grand Prix": {
+    "track_temp": 45.1,
+    "air_temp": 23.7,
+    "n_races": 5
+  },
+  "S\u00e3o Paulo Grand Prix": {
+    "track_temp": 40.5,
+    "air_temp": 21.2,
+    "n_races": 5
+  },
+  "Qatar Grand Prix": {
+    "track_temp": 29.6,
+    "air_temp": 24.8,
+    "n_races": 4
+  },
+  "Saudi Arabian Grand Prix": {
+    "track_temp": 32.2,
+    "air_temp": 27.0,
+    "n_races": 5
+  },
+  "Australian Grand Prix": {
+    "track_temp": 31.9,
+    "air_temp": 20.3,
+    "n_races": 4
+  },
+  "Miami Grand Prix": {
+    "track_temp": 40.7,
+    "air_temp": 28.2,
+    "n_races": 4
+  },
+  "Canadian Grand Prix": {
+    "track_temp": 36.7,
+    "air_temp": 20.4,
+    "n_races": 4
+  },
+  "Singapore Grand Prix": {
+    "track_temp": 34.1,
+    "air_temp": 29.2,
+    "n_races": 4
+  },
+  "Japanese Grand Prix": {
+    "track_temp": 30.5,
+    "air_temp": 20.0,
+    "n_races": 4
+  },
+  "Las Vegas Grand Prix": {
+    "track_temp": 18.3,
+    "air_temp": 17.6,
+    "n_races": 3
+  },
+  "Chinese Grand Prix": {
+    "track_temp": 32.6,
+    "air_temp": 23.1,
+    "n_races": 2
+  }
+}

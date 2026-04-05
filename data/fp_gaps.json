@@ -1,0 +1,123 @@
+{
+  "Austrian Grand Prix": {
+    "SOFT_vs_MEDIUM": 0.557,
+    "MEDIUM_vs_HARD": 0.213
+  },
+  "Styrian Grand Prix": {
+    "SOFT_vs_MEDIUM": 0.904,
+    "MEDIUM_vs_HARD": 1.014
+  },
+  "British Grand Prix": {
+    "SOFT_vs_MEDIUM": 0.914,
+    "MEDIUM_vs_HARD": 0.789
+  },
+  "70th Anniversary Grand Prix": {
+    "SOFT_vs_MEDIUM": 0.58,
+    "MEDIUM_vs_HARD": 0.107
+  },
+  "Spanish Grand Prix": {
+    "SOFT_vs_MEDIUM": 1.092,
+    "MEDIUM_vs_HARD": 1.233
+  },
+  "Belgian Grand Prix": {
+    "SOFT_vs_MEDIUM": 0.841,
+    "MEDIUM_vs_HARD": 1.261
+  },
+  "Italian Grand Prix": {
+    "SOFT_vs_MEDIUM": 0.919,
+    "MEDIUM_vs_HARD": 0.82
+  },
+  "Tuscan Grand Prix": {
+    "SOFT_vs_MEDIUM": 0.96,
+    "MEDIUM_vs_HARD": 0.992
+  },
+  "Russian Grand Prix": {
+    "SOFT_vs_MEDIUM": 1.275,
+    "MEDIUM_vs_HARD": 0.664
+  },
+  "Portuguese Grand Prix": {
+    "SOFT_vs_MEDIUM": 0.547,
+    "MEDIUM_vs_HARD": 1.29
+  },
+  "Turkish Grand Prix": {
+    "SOFT_vs_MEDIUM": 1.522
+  },
+  "Bahrain Grand Prix": {
+    "SOFT_vs_MEDIUM": 1.076,
+    "MEDIUM_vs_HARD": 0.851
+  },
+  "Sakhir Grand Prix": {
+    "SOFT_vs_MEDIUM": 0.624
+  },
+  "Abu Dhabi Grand Prix": {
+    "SOFT_vs_MEDIUM": 1.125,
+    "MEDIUM_vs_HARD": 0.796
+  },
+  "Emilia Romagna Grand Prix": {
+    "SOFT_vs_MEDIUM": 0.788,
+    "MEDIUM_vs_HARD": 0.536
+  },
+  "Monaco Grand Prix": {
+    "SOFT_vs_MEDIUM": 1.32,
+    "MEDIUM_vs_HARD": 0.179
+  },
+  "Azerbaijan Grand Prix": {
+    "SOFT_vs_MEDIUM": 0.727,
+    "MEDIUM_vs_HARD": 1.359
+  },
+  "French Grand Prix": {
+    "SOFT_vs_MEDIUM": 1.152,
+    "MEDIUM_vs_HARD": 0.591
+  },
+  "Hungarian Grand Prix": {
+    "SOFT_vs_MEDIUM": 0.905,
+    "MEDIUM_vs_HARD": 0.97
+  },
+  "Dutch Grand Prix": {
+    "SOFT_vs_MEDIUM": 1.25,
+    "MEDIUM_vs_HARD": 0.622
+  },
+  "United States Grand Prix": {
+    "SOFT_vs_MEDIUM": 1.24
+  },
+  "Mexico City Grand Prix": {
+    "SOFT_vs_MEDIUM": 1.584,
+    "MEDIUM_vs_HARD": 0.888
+  },
+  "S\u00e3o Paulo Grand Prix": {
+    "SOFT_vs_MEDIUM": 0.277,
+    "MEDIUM_vs_HARD": 1.725
+  },
+  "Qatar Grand Prix": {
+    "SOFT_vs_MEDIUM": 0.683,
+    "MEDIUM_vs_HARD": 0.909
+  },
+  "Saudi Arabian Grand Prix": {
+    "SOFT_vs_MEDIUM": 0.759,
+    "MEDIUM_vs_HARD": 0.727
+  },
+  "Australian Grand Prix": {
+    "SOFT_vs_MEDIUM": 1.13,
+    "MEDIUM_vs_HARD": 0.686
+  },
+  "Miami Grand Prix": {
+    "SOFT_vs_MEDIUM": 1.511,
+    "MEDIUM_vs_HARD": 0.535
+  },
+  "Canadian Grand Prix": {
+    "SOFT_vs_MEDIUM": 1.05,
+    "MEDIUM_vs_HARD": 0.7
+  },
+  "Singapore Grand Prix": {
+    "SOFT_vs_MEDIUM": 1.2,
+    "MEDIUM_vs_HARD": 0.521
+  },
+  "Japanese Grand Prix": {
+    "SOFT_vs_MEDIUM": 1.115,
+    "MEDIUM_vs_HARD": 1.239
+  },
+  "Las Vegas Grand Prix": {
+    "SOFT_vs_MEDIUM": 0.773,
+    "MEDIUM_vs_HARD": 1.008
+  }
+}
